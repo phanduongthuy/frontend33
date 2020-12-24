@@ -1,0 +1,165 @@
+.main{
+	width: 56%;
+	font-family: arial;
+	font-size: 12px;
+	border: 5px solid white;
+}
+
+#head{
+	background-image: url(../images/123.jpg);
+	width: 100%;
+	height: 400px;
+	background-size: cover;
+}
+
+#menu{
+	background: #474746;
+	border-bottom: 4px solid orange;
+	width: 100%;
+	height: 30px;
+}
+
+.mainMenu{
+	color: orange;
+	float: left;
+	padding: 10px 5px 10px 10px;
+	font-weight: bold;
+}
+
+.mainMenu:hover{
+	color: red;
+	float: left;
+	padding: 10px 5px 10px 10px;
+	font-weight: bold;
+}
+
+.divideMenu{
+	float: left;
+	background:#D1CBCB;
+	margin-top: 2px; 
+	margin-bottom: 11px ; 
+	margin-left:5px; 
+	width: 2px;
+	height: 25px;
+}
+
+#body{
+	background: #FFFFFF;
+	width: 100%;
+	height: 900px;
+}
+
+#bodyLeft{
+	float: left;
+	width: 17%;
+}
+
+.smallMenu{
+	width: 100%;
+	border: 1px solid #DAD2D2;
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+.nameSmallMenu{
+	width: 100%;
+	height: 20px;
+	background-image: url(../images/menu_bar.gif);
+	color: white;
+	font-weight: bold;
+	padding-top: 6px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+.sonMenu{
+	color: blue;
+	text-align: left;
+	margin-left: -40px;
+	padding: 5px;
+}
+
+.sonMenu:hover{
+	color: #BF0303;
+}
+.img{
+	margin-bottom: 20px;
+	float: bottom;
+}
+
+#bodyCenter{
+	float:left;
+	width: 56%;
+	padding-left: 25px;
+	padding-right: 10px;
+}
+
+#introduce{
+	background: #FDDB64;
+	width: 96%;
+	height: 50px;
+	border-radius: 10px;
+	padding: 8px;
+	margin-bottom: 10px;
+	font-style: italic;
+	color: white;
+}
+
+.same{
+	margin-bottom: 50px;
+	width: 100%;
+}
+
+.leftNews{
+	background-image: url(../images/main_bar_left.gif);
+	width: 100%;
+	height: 18px;
+	color: white;
+	padding-top: 5px;
+	padding-left: 5px;
+	font-weight: bold;
+}
+
+.rightNews{
+	background-image: url(../images/main_bar_right.gif);
+	width: 100%;
+	height: 18px;
+	color: white;
+	padding-top: 5px;
+	padding-right: 5px;
+	font-weight: bold;
+	text-align: right;
+}
+
+.nameNews{
+	color: orange;
+	font-weight: bold;
+}
+
+.contentNews{
+	text-align: justify;
+}
+
+.click{
+	color: orange;
+}
+
+.click:hover{
+	color: #E01217;
+}
+
+#bodyRight{
+	float: right;
+	width: 18%;
+}
+
+#footer{
+	background: #474746;
+	border-top: 4px solid orange;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	padding-top: 30px;
+	color: white;
+	font-weight: bold;
+}

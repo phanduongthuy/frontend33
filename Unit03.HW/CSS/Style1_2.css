@@ -1,0 +1,37 @@
+.main{
+	float: left;
+	width: 51%;
+	height: 150px;
+	border-radius: 10px;
+	background-color: #F8F1F1;
+}
+
+.box{
+	float: left;
+	margin: 20px;
+}
+
+#top{
+	padding: 5px 0;
+}
+
+#bottom{
+	padding-top: 20px;
+	line-height: 4;
+    display: flex;
+    align-items: center;
+}
+
+.box p{
+	margin: 2px 0;
+}
+
+#top span:hover{
+	color: #F80A0A;
+	text-decoration: underline;
+}
+
+#bottom b:hover{
+	color: #204CDB;
+	text-decoration: underline;
+}
