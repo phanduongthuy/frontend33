@@ -1,0 +1,151 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: Arial;
+	font-size: 14px;
+}
+.main{
+	background-image: url(../images/bg.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	width: 100%;
+	height: 870px;
+}
+.header{
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 15px;
+	padding: 30px 20px;
+}
+.header .logo{
+	float: left;
+	font-size: 24px;
+	margin-left: 40px;
+	font-style: italic;
+}
+.header .menu-top{
+	position: absolute;
+	left: 900px;
+	margin-right: 35px;
+}
+.header .menu-top .menu-top-item{
+	width: 90px;
+	float: right;
+}
+.header .menu-top .menu-top-item>a{
+	text-decoration: none;
+	color: black;
+	padding: 5px 10px;
+	margin-right: 10px;
+}
+.header .menu-top .menu-top-item>a:hover{
+	border: 1px outset #C4BEBE;
+	background-color: #C4BEBE;
+	border-radius: 5px;
+}
+.body{
+	display: block;
+	width: 100%;
+	height: 70%;
+}
+.body .menutLeft{
+	float: left;
+	width: 200px;
+	margin-left: 30px;
+	margin-right: 30px;
+}
+.body .menutLeft>a{
+	display: block;
+	text-decoration: none;
+	font-size: 16px;
+	padding: 5px 0 5px 50px;
+	color: black;	
+}
+.body .menutLeft>a:hover{
+	border: 1px outset #ECD434;
+	background-color: #ECD434;
+	border-radius: 5px;
+}
+.body .content{
+	float: left;
+	width: 70%;
+	padding-left: 20px;
+}
+.body .content .news{
+	width: 260px;
+	height: 200px;
+	float: left;
+	margin: 0 20px 20px 0;
+	position: relative;
+}
+.body .content .news .title{
+	width: 100%;
+	height: 30px;
+	background: #E2D4D4;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+}
+.body .content .news .title>div{
+	font-weight: bold;
+	font-size: 18px;
+	padding: 5px 0 0 10px;
+}
+.body .content .news:hover .title{
+	color: #372EF3;
+}
+.body .content .news .images>img{
+	width: 100%;
+	height: 170px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+}
+.body .content .news .text{
+	position: absolute;
+	background: black;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	opacity: 60%;
+	width: 100%;
+	padding-top: 10px;
+	bottom: 0;
+	
+} 
+.body .content .news .text>div{
+	color: white;
+	font-weight: bold;
+	font-size: 12px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+	margin-right: 1px;
+}
+.body .content .news:hover .text>div{
+	color: #A00909;
+}
+#footer{
+	width: 100%;
+	height: 60px;
+	float: left;
+	position: relative;
+}
+.banQuyen{
+	float: left;
+	position: absolute;
+	margin-left: 20px;
+	top: 40px;
+	font-size: 14px;
+}
+.footerRight{
+	float: left;
+	list-style: none;
+	display: inline-block;
+	position: absolute;
+	top: 40px;
+	left: 270px;
+}
+.footerRight>a{
+	color: blue;
+	margin-left: 30px;
+}
