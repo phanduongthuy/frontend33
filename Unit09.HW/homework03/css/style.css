@@ -1,0 +1,23 @@
+body{
+	width: 60%;
+	margin: 0 auto;
+}
+#form{
+	width: 50%;
+	border: 3px solid black;
+}
+#form>h3{
+	margin-left: 5%;
+}
+#form .menu{
+	margin: 5%;
+}
+#form .menu input{
+	margin-left: 2%;
+}
+
+/*#text{
+	float: left;
+	width: 80%;
+	margin-top: 10px;
+}*/
