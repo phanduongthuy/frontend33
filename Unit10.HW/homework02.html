@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>HomeWork02</title>
+	<link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+	<form action="" name="frm">
+		<div>
+			<li>Full Name</li>
+			<li >
+				<input type="text" id="name" name="name1" placeholder="Nhập họ tên..." required>
+			</li>
+			&emsp;<span id="ername" style="color: red"></span>
+		</div>
+		<div>
+			<li>Gender</li>
+			<li id="gender">
+				<input type="radio" name="gender" id="male">Male
+				<input type="radio" name="gender" id="male">Female
+			</li>
+		</div>
+		<div>
+			<li>Email</li>
+			<li>
+				<input type="email" id="email" name="email1"  placeholder="Nhập email...">
+			</li>
+			&emsp;<span id="eremail" style="color: red"></span>
+		</div>
+		<div>
+			<li>Phone Number</li>
+			<li>
+				<input type="text" id="phone" name="phone1" placeholder="Nhập số điện thoại...">
+			</li>
+			&emsp;<span id="erphone" style="color: red"></span>
+		</div>
+		<div>
+			<li>Password</li>
+			<li>
+				<input type="password" id="psw" name="psw1" >
+			</li>
+			&emsp;<span id="erpsw" style="color: red"></span>
+		</div>
+		<div>
+			<li>Confirm Password</li>
+			<li>
+				<input type="password" id="repsw" name="repsw1" >
+			</li>
+			&emsp;<span id="errepsw" style="color: red"></span>
+		</div>
+			
+	</form>
+	
+	<div class="but">
+		<input type="button" onclick="SignUp()"value="SignUp">
+    	<input type="button" onclick="Delete()" value="Clear">
+	</div>
+	
+</body>
+<script type="text/javascript" src="js/script2.js"></script>
+</html>
