@@ -1,0 +1,64 @@
+* a{
+	font-style: none;
+}
+* hr{
+	height: 5px;
+	width: 50px;
+}
+header {
+	width: 100%;
+	background-image: url(../images/bg-masthead.jpg);
+}
+header .main-menu #main_menu ul li a {
+	color: white;
+}
+.banner {
+	padding: 100px 0;
+}
+.banner .big-title h1 {
+	color: white; 
+	font-weight: bold;
+}
+.banner .button {
+	margin-top: 20px !important;
+	background: #E94808;
+}
+.start-box {
+	background: #E94808;
+	padding: 30px 0;
+}
+
+.start-box .button {
+	margin-top: 20px !important;
+	font-weight: bold;
+	background: white;"
+}
+main .title p {
+	margin-top: 30px;
+	font-weight: bold;
+	font-size: 24px;
+}
+main .your-services {
+	margin: 30px 0;
+}
+main .your-services .service .icon i {
+	font-size: 100px;
+	color: #E94808;
+}
+main .your-services .service .icon i:hover {
+	cursor: pointer;
+}
+.finish-box {
+	background: #373636;
+	padding: 30px 0;
+}
+.finish-box .big-title{
+	margin-bottom: 30px;
+	color: white;
+}
+footer {
+	margin-top: 30px;
+}
+footer .container i {
+	font-size: 80px;
+}
