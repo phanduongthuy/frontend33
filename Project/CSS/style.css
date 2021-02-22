@@ -1,0 +1,299 @@
+* {
+	box-sizing: border-box;
+}
+	
+a{	
+	font-style: none;
+}
+* hr{
+	height: 3px;
+	width: 50px;
+}
+
+ul li {
+	list-style: none;
+}
+.toTop {
+	bottom: 0 !important;
+	right: 0 !important;
+
+}
+
+.clearBoth {
+	clear: both;
+}
+/*Header*/
+
+header {
+	width: 100%;
+}
+header .main-menu a img:hover {
+	border: 3px outset #939191;
+}
+header .banner {
+	padding-top: 66px;
+	position: relative;
+}
+	.banner img {
+		height: 400px;
+		width: 100%;
+	}
+	.banner h1 {
+		color: white;
+	}
+	.banner .button {
+		font-weight: bold;
+		color: white;
+	}
+	.banner .button a {
+		color: white;
+	}
+	.banner .loading {
+		position: absolute;
+		bottom: 10px;
+		left: 49%;
+	}
+	.home {
+		width: 100%;
+		position: absolute;
+		top: 40%;
+	}
+	.card-custom{
+		background: none !important;
+		border: none !important;
+	}
+	.collapse .active {
+		border-bottom: 2px solid #F82929;
+	}
+/*Section*/
+
+section {
+
+}
+
+/*.conatruction*/
+	.construction {
+		
+	}
+	.firstTitle .card {
+		border: none;
+	}
+	.construction .row .card {
+		border: none;
+	}
+	.construction .row .card img {
+		height: 200px;
+	}
+
+/*.about us*/
+	
+	.aboutUs {
+		background: #CDCBCB;
+	}
+	.aboutUs .container {
+		
+	}
+	.aboutUs .container .firstTitle {
+		width: 90%;
+		margin: 0 auto;	
+		background: #CDCBCB !important;
+	}
+	.aboutUs .firstTitle .card .card-body {
+		padding: 25px;
+	}
+	.aboutUs .container .images {
+		width: 70%;
+	}
+	.aboutUs .container .images img{
+		width: 100%;
+		height: 300px;
+	}
+
+	/*milestone*/
+	#milestone {
+		background-image: url(../image/group.jpg);
+	}
+	#milestone #content {
+		background: #000000c7;
+		padding: 30px 0;
+	}
+	#milestone #content .row span {
+		color: #d39e00;
+		font-weight: bold;
+		font-size: 20px;
+	}
+	#milestone #content .row .title {
+		margin-top: 20px;
+	}
+	#milestone #content .row .title h5 {
+		color: white;
+	}
+
+/*recent works*/
+
+	.recent-works .container .choose ul{
+       width: 400px !important;
+       margin: auto !important;
+    }
+    .recent-works .container .choose ul li {
+    	margin: 10px !important;
+       	color: #212121 !important;
+       	padding: 10px 12px !important;
+       	font-size: 16px !important;
+       	box-shadow: 3px 5px 5px rgb(0,0,0,0.23) !important;
+       	border-radius: 2px !important;
+    }
+    .image {
+    	width: 100%;
+    	height: 220px;
+    }
+
+    .btn-active {
+    	background: #07E24A;
+    	border: 2px outset #070707;
+    	border-radius: 20px !important;
+    	font-weight: bold;
+    }
+
+    .btn-choose:hover {
+    	background: #F2FA24;
+    	border: 2px outset #070707;
+    	border-radius: 20px !important;
+    }
+/*What we offer*/
+
+	.What-we-offer {
+		margin: 50px 0;
+	}
+
+	.firstTitle .card .card-body p {
+		margin: 25px !important;	
+	}
+	
+
+/*what-other-say*/
+	.what-other-say {
+		margin: 50px 0;
+	}
+
+	.box-item {
+		background: gray;
+		position: relative;
+	}
+
+	.item-img {
+		width: 25% !important;
+	    position: absolute;
+	    left: 37%;
+	}
+	.item-img img{
+		width: 100%;
+		border-radius: 50%;
+		box-shadow: 2px 5px 10px black;
+	}
+
+	.item-text {
+		background: white;
+
+	}
+	.text-obj {
+		background: #909595;
+		box-shadow: 5px 5px 10px #B8B9B9;
+		text-align: justify;
+		padding: 0 20px;
+		/*padding-top: 20px !important;*/
+	}
+	.wid-item {
+		width: 320px !important;
+	}
+	.text-box {
+		/*margin-bottom: 30px !important;*/
+	}
+
+	.owl-carousel .owl-dots.disabled/*, .owl-carousel .owl-nav.disabled*/{
+		display: block !important;
+	}
+
+	.owl-theme .owl-nav.disabled+.owl-dots {
+		margin-top: 50px; 
+	}
+
+
+
+
+
+
+
+
+ /*Why cho0se us?*/
+
+ 	.why-choose-us {
+ 		margin-top: 30px;
+ 	}
+
+
+ /* Contact */
+ 	.input input {
+ 		height: 40px;
+ 		width: 100%;
+ 		transition: width .35s ease-in-out;
+
+ 	}
+ 	/*.input input:focus {
+ 		width: 100%;
+ 	}*/
+
+ 	.error {
+ 		color: red;
+ 		font-style: italic;
+ 	}
+
+
+/*Donor*/
+	.donors .owl-item {
+		width: 300px !important;
+	}
+	.donors .item {
+		height: 100px;
+		padding-top: 40px;
+	}
+	.donors .item a{
+		margin-top: 20px;
+	}
+	.donors .item i{
+		font-size: 50px;
+	}
+
+	.donors .item span {
+		font-size: 24px;
+		margin-left: 5px;
+		font-weight: bold;
+	}
+	#item1 span{
+		font-family: 
+	}
+
+	#item2 span{
+		font-family: 'Pacifico', cursive;
+	}
+
+	#item3 span{
+		font-family: 'Reggae One', cursive;
+	}
+
+	#item4 span{
+		font-family: 'Oi', cursive;
+		font-weight: 400;
+	}
+
+	#item5 span{
+		font-family: 'RocknRoll One', sans-serif;
+	}
+
+	#item6 span{
+		font-family: 'Press Start 2P', cursive;
+	}
+
+	#item7 span{
+		font-family: 'Sacramento', cursive;
+	}
