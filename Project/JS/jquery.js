@@ -1,8 +1,8 @@
 $(document).ready(function ($) {
 
-	$('.banner .changeTitle').click(function() {
-		$(this).parent().parent().prev().html('<h1 class="card-title wow slideInRight">WE ARE DEVELOPMENT</h1>');
-	})
+	// $('.banner .changeTitle').click(function() {
+	// 	$(this).parent().parent().prev().html('<h1 class="card-title wow slideInRight">WE ARE DEVELOPMENT</h1>');
+	// })
 	
 	// counter
 	$('.counter').counterUp({
@@ -33,6 +33,21 @@ $(document).ready(function ($) {
         });
     });
 
+    // Lightbox
+    
+    // $('img').on('click', function(){
+    //   $('#zoom').css({
+    //     'display':'block',
+    //   });
+    //   $('.imgzoom').attr('src', $(this).attr('src'))
+    //   $('.alt').text($(this).attr('alt'))
+    // })
+    // $('.close').on('click', function(){
+    //   $(this).parent().css({
+    //     'display':'none',
+    //   })
+    // }); 
+
     // validate form
     
     $('#contact_form').validate({
@@ -45,16 +60,20 @@ $(document).ready(function ($) {
         },
 
         subject:"required",
+
         message:"required"
       },
 
       messages: {
       name: "Please specify your name",
+
       email: {
         required: "We need your email address to contact you",
         email: "Your email address must be in the format of name@domain.com"
       },
+
       subject: "Please specify subject for message",
+      
       message: "Please specify message"
     }
     });
