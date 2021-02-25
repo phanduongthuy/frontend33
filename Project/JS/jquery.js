@@ -27,7 +27,8 @@ $(document).ready(function ($) {
         var type = $(this).data('type');
 
         type = '.' + type;
-
+        $('.box_img img').css('display: block;');
+        console.log('.box_img img');
         $('.box_img').isotope({
             filter: type
         });
