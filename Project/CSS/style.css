@@ -18,37 +18,23 @@ img{
 	height: 100%;
 }
 .toTop {
-	bottom: 0 !important;
-	right: 0 !important;
-
-}
-
-.progress-wrap {
-    position: fixed;
-    right: 50px;
-    bottom: 50px;
-    height: 46px;
-    width: 46px;
-    cursor: pointer;
-    display: block;
-    border-radius: 50%;
+	position: fixed;
+	bottom: 30px;
+	right: 20px; 
+	z-index: 10000; 
+	cursor: pointer;
     box-shadow: inset 0 0 0 2px #ecedf3;
-    z-index: 10000;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(15px);
-    -webkit-transition: all .2s linear;
+    border-radius: 50%;
+	transform: translateY(15px);
+	-webkit-transition: all .2s linear;
     transition: all .2s linear;
 }
-svg:not(:root) {
-    overflow: hidden;
-}
-.progress-wrap svg.progress-circle path {
-    stroke: var(--teal);
-    stroke-width: 5;
-    box-sizing: border-box;
-    -webkit-transition: all .2s linear;
-    transition: all .2s linear;
+.toTop a{
+	padding: 1px !important;
+	line-height: 30px;
+	font-size: 20px;
+	color: orange;
+	
 }
 
 .clearBoth {
@@ -97,7 +83,7 @@ header .banner {
 		left: 49%;
 	}
 	.banner .hand-down i {
-		font-size: 36px;
+		font-size: 24px;
 	}
 	.carousel-caption{
 		bottom: 40%;
@@ -116,7 +102,7 @@ header .banner {
 		border: none !important;
 	}
 	.collapse .active {
-		border-bottom: 2px solid #F82929;
+		border-bottom: 2px solid orange;
 	}
 /*Section*/
 
