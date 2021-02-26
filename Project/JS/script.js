@@ -1,9 +1,14 @@
 $(document).ready(function ($) {
 
-	// $('.banner .changeTitle').click(function() {
-	// 	$(this).parent().parent().prev().html('<h1 class="card-title wow slideInRight">WE ARE DEVELOPMENT</h1>');
-	// })
-	
+  // $(window).scroll(function() {
+  //   if ($(this).scrollTop()) {
+  //     $('.toTop').fadeIn();
+
+  //   }else {
+  //     $('.toTop').fadeOut();
+  //   }
+  // });
+
 	// counter
 	$('.counter').counterUp({
       delay: 10,
