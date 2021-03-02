@@ -474,7 +474,24 @@ section {
 		font-size: 50px;
 	}
 
-
+	.heading .facebook {
+		color: #2F76F8;
+	}
+	.heading .instagram {
+		color: #CD66F8;
+	}
+	.heading .twitter {
+		color: #2F76F8;
+	}
+	.heading .youtube {
+		color: #FF0000;
+	}
+	.heading .git {
+		color: #000000;
+	}
+	.heading .mail {
+		color: #FFD800;
+	}
 	.footer-logo {
 		width: 30%;
 	}
