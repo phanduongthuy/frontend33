@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Bài tậpmenu responsive</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.js"></script>
+
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#wraper{
+			width: 100%;
+			background: #EB600C;
+			color: white;
+			height: 45px;
+		}
+		#logo{
+			width: 40%;
+			height: 45px;
+			font-size: 25px;
+			float: left;
+			line-height: 45px;
+		}
+		#menu{
+			float: left;
+			/*display: none;*/
+		}
+		#menu ul{
+			width: 100%;
+			height: 45px;
+			list-style: none;
+		}
+		#menu ul li {
+			float: left;
+			line-height: 45px;
+			padding: 0px 15px;
+			font-size: 20px;
+			position: relative;
+		}
+		#menu ul li:hover{
+			cursor: pointer;
+			background: #888;
+			
+		}
+		#menu ul li a{
+			text-decoration: none;
+			color: black;
+		}
+		#menu ul li ul{
+			display: none;
+			position: absolute;
+			left: 0;
+			width: 100%;
+			height: 400%;
+			background:#888;
+			
+		}
+		#menu ul li ul li{
+			clear: both;
+			width: 100%;
+			border-bottom: 1px solid white;
+			padding: 0;
+			text-align: center;
+
+		}
+		#menu ul li:hover ul{
+			display: block;
+		}
+		#menu ul li:hover ul li:hover{
+			background: #EB600C;
+		}
+		#icon{
+			font-size: 30px;
+			line-height: 45px;
+			display: none;
+		}
+		#plus{
+			font-size: 12px;
+			display: none;
+		}
+		@media screen and (max-width: 995px) {
+			#icon{
+				display: block;
+				float: right;
+				margin-right: 30px;
+				cursor: pointer;
+			}
+			#logo{
+				width: 80%;
+				position: relative;
+			}
+			#menu ul li ul li:hover{
+				background: #888;
+			}
+			#menu ul li:hover ul{
+				display: none;
+			}
+			#menu ul li:hover
+			{
+				background: #888;
+			}
+			#plus{
+				display: block;
+				line-height: 45px;
+				float: right;
+				cursor: pointer;
+				margin-right: 10px;
+			}
+			#menu{
+				/*display: none;*/
+				background: #EB600C;
+				width: 60%;
+				position: absolute;
+				top:45px;
+				left: -60%;
+				clear: both;
+				border-top: 1px solid white;
+			}
+			#menu ul li{
+				clear: both;
+				text-align: center;
+				vertical-align: middle;	
+				width: 100%;
+				padding: 0;
+				border-bottom: 1px solid white;
+			}
+			#menu ul li a{
+				color:white;
+					
+			}
+		}
+	</style>
+	<!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
+	<script type="text/javascript">
+		var bar = '<i class="fa fa-bars" aria-hidden="true"></i>';
+		var close = '<i class="fa fa-times" aria-hidden="true"></i>';
+		var cong = '<i class="fa fa-plus" aria-hidden="true"></i>';
+		var tru = '<i class="fa fa-minus" aria-hidden="true"></i>';
+
+		$(function()
+		{	
+			var check = true;
+			$('#icon').click(function()
+			{
+				
+				if(check == true)
+				{
+					
+					$('#icon').html(close).animate({  borderSpacing: -90 }, {
+   					 step: function(now,fx) {
+				      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+				      $(this).css('-moz-transform','rotate('+now+'deg)');
+				      $(this).css('transform','rotate('+now+'deg)');
+  				    },
+   					 duration:'slow'
+					},'linear');
+
+					$("#menu").animate({"left":"0px"}, "slow");
+					check = !check;
+
+				}else
+				{   
+					
+					$('#icon').html(bar).animate({  borderSpacing: 180 }, {
+   					 step: function(now,fx) {
+				      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+				      $(this).css('-moz-transform','rotate('+now+'deg)');
+				      $(this).css('transform','rotate('+now+'deg)');
+  				    },
+   					 duration:'slow'
+					},'linear');
+					$("#menu").animate({"left":"-60%"}, "slow");
+					check = !check;
+					
+				}
+
+				});
+
+				var check1 = true;
+				$('#sup').click(function()
+				{
+					
+					if(check1 == true)
+				{
+					
+					$('#plus').html(tru).animate({  borderSpacing: 180 }, {
+   					 step: function(now,fx) {
+				      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+				      $(this).css('-moz-transform','rotate('+now+'deg)');
+				      $(this).css('transform','rotate('+now+'deg)');
+  				    },
+   					 duration:'slow'
+					},'linear');
+					$('#menu ul li ul').css({'position':'static'});
+					$('#sup').css({'background':'#888'});
+					
+					$('#menu ul li ul').slideDown();
+					check1 = !check1;
+
+				}else
+				{   
+					
+					$('#plus').html(cong).animate({  borderSpacing: -90 }, {
+   					 step: function(now,fx) {
+				      $(this).css('-webkit-transform','rotate('+now+'deg)'); 
+				      $(this).css('-moz-transform','rotate('+now+'deg)');
+				      $(this).css('transform','rotate('+now+'deg)');
+  				    },
+   					 duration:'slow'
+					},'linear');
+					check1 = !check1;
+					$('#sup').css({'background':'#EB600C'});
+					$('#menu ul li ul').slideUp();
+					
+				}
+				});
+			});
+	</script>
+</head>
+<body>
+	<div id="wraper">
+		<div id="logo">
+			<span>Wordpress Reponsive Menu</span>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Why go pro ?</a></li>
+				<li id="sup"><a  href="#">Support</a><p id="plus"><i  class="fa fa-plus" aria-hidden="true"></i></p>
+					<ul>
+						<li><a href="#">Docs</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="#">Donate</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>	
+				</li>
+				<li id="ac"><a href="#">Account</a></li>
+			</ul>
+		</div>
+		<div id="icon">
+			<i class="fa fa-bars" aria-hidden="true"></i>
+		</div>
+	</div>
+</body>
+</html>
